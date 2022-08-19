@@ -63,7 +63,7 @@ public class BMI_History extends AppCompatActivity {
             Toast.makeText(this, "No Data. ", Toast.LENGTH_SHORT).show();
         } else {
             while (cursor.moveToNext()) { //read all data from our cursor
-                Bmi.add(cursor.getString(5)); //0 means the 1st column
+                Bmi.add(cursor.getString(5).substring(0,5)); //0 means the 1st column
                 height.add(cursor.getString(2)); //1 means the 2nd column
                 weight.add(cursor.getString(3)); //2 means the 3rd column
                 date.add(cursor.getString(4)); //3 means the 4th column
