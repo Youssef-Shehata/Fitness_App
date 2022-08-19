@@ -1,11 +1,27 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import androidx.core.content.ContextCompat;
+//MB AN error previous line
+
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+
+import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
+
+import android.widget.SeekBar;
 import android.widget.Toast;
+
+//todo Edit The Colors
+
+import com.example.myapplication.databinding.ActivityMainBinding;
+
+import java.util.ArrayList;
+
 
 import com.example.myapplication.DBHelper;
 import com.example.myapplication.R;

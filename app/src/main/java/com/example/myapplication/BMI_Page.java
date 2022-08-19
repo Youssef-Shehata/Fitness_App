@@ -7,6 +7,8 @@ import androidx.core.content.ContextCompat;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
@@ -25,6 +27,7 @@ public class BMI_Page extends AppCompatActivity {
     String currentWeight = "50";
     String typeOfUser = "0";
     String currentAge= "20";
+    private Button but;
 
     DBHelper myDB;
     ArrayList<String> BMI, height, weight, age;
@@ -101,7 +104,18 @@ public class BMI_Page extends AppCompatActivity {
 
 
         displayData();
+        but=(Button) findViewById(R.id.viewhistory);
+        but.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                open_history();
+            }
+        });
 
+    }
+    public void open_history(){
+        Intent intent =new Intent(this,BMI_History.class);
+        startActivity(intent);
     }
 
     private void calculateBmi() {
@@ -144,9 +158,9 @@ public class BMI_Page extends AppCompatActivity {
         }
         else {
             while (cursor.moveToNext()){ //read all data from our cursor
-                BMI.add(cursor.getString(0)); //0 means the 1st column
-                height.add(cursor.getString(1)); //1 means the 2nd column
-                weight.add(cursor.getString(2)); //2 means the 3rd column
+                BMI.add(cursor.getString(4)); //0 means the 1st column
+                height.add(cursor.getString(2)); //1 means the 2nd column
+                weight.add(cursor.getString(1)); //2 means the 3rd column
                 age.add(cursor.getString(3)); //3 means the 4th column
             }
         }

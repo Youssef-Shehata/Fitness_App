@@ -22,6 +22,15 @@
             android:name=".BMI_Result"
             android:exported="false" />
         <activity
+            android:name=".BMI_History"
+            android:exported="false" />
+        <activity
+            android:name=".BMI_Page"
+            android:exported="false" />
+        <activity
+            android:name=".BMI_Result"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

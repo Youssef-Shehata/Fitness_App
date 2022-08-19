@@ -8,12 +8,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
 
-import com.example.myapplication.Utils.Exercise;
-
-import java.util.List;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class DBHelper extends SQLiteOpenHelper {
 
@@ -26,8 +24,11 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String COLUMN_mBMI = "mBMI";
     private static final String COLUMN_HEIGHT = "height";
     private static final String COLUMN_WEIGHT = "weight";
-    private static final String COLUMN_AGE = "age";
+    private static final String COLUMN_DATE = "age";
     private static final String COLUMN_GENDER = "gender";
+    Date Currenttime = Calendar.getInstance().getTime();
+    SimpleDateFormat sdf =new SimpleDateFormat("yyyy/LL/dd");
+    String simple = sdf.format(Currenttime);
 
     public DBHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -41,7 +42,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 COLUMN_GENDER + " TEXT, " +
                 COLUMN_HEIGHT + " TEXT, " +
                 COLUMN_WEIGHT + " TEXT, " +
-                COLUMN_AGE + " TEXT, " +
+                COLUMN_DATE + " TEXT, " +
                 COLUMN_mBMI + " TEXT); ";
         sqLiteDatabase.execSQL(query);
 
@@ -60,7 +61,7 @@ public class DBHelper extends SQLiteOpenHelper {
         cv.put(COLUMN_GENDER, gender);
         cv.put(COLUMN_HEIGHT, height);
         cv.put(COLUMN_WEIGHT, weight);
-        cv.put(COLUMN_AGE, age);
+        cv.put(COLUMN_DATE, simple);
         cv.put(COLUMN_mBMI, mBMI);
 
         long res = db.insert(TABLE_NAME, null, cv);//insert data in our database table

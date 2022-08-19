@@ -3,7 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/drawable/card_back.xml" value="0.121" />
+        <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/drawable/card_back_btn.xml" value="0.121" />
+        <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/drawable/card_back_male_female.xml" value="0.2445" />
+        <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/drawable/card_back_plus_minus.xml" value="0.2445" />
+        <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.121" />
+        <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/layout/activity_bmi_page.xml" value="0.25" />
+        <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/layout/activity_bmi_result.xml" value="0.264" />
+        <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 1/Fitness_App-Bmi_Calc_Page/app/src/main/res/layout/activity_bmi_history.xml" value="0.3625" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 1/Fitness_App-Bmi_Calc_Page/app/src/main/res/layout/activity_bmi_page.xml" value="0.3625" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 1/Fitness_App-Bmi_Calc_Page/app/src/main/res/layout/activity_bmi_result.xml" value="0.328125" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 1/Fitness_App-Bmi_Calc_Page/app/src/main/res/layout/activity_main.xml" value="0.328125" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 1/Fitness_App-Bmi_Calc_Page/app/src/main/res/layout/historyv.xml" value="0.25" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 1/Fitness_App-Bmi_Calc_Page/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2285" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 3/Fitness_App-Bmi_Calc_Page/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3365" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 3/Fitness_App-Bmi_Calc_Page/app/src/main/res/drawable/card_back.xml" value="0.3365" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 3/Fitness_App-Bmi_Calc_Page/app/src/main/res/drawable/card_back_btn.xml" value="0.3365" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 3/Fitness_App-Bmi_Calc_Page/app/src/main/res/drawable/card_back_male_female.xml" value="0.3365" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 3/Fitness_App-Bmi_Calc_Page/app/src/main/res/drawable/card_back_not_focus.xml" value="0.3365" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 3/Fitness_App-Bmi_Calc_Page/app/src/main/res/drawable/ic_baseline_check_circle_outline_24.xml" value="0.3365" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 3/Fitness_App-Bmi_Calc_Page/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.3365" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 3/Fitness_App-Bmi_Calc_Page/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3365" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 3/Fitness_App-Bmi_Calc_Page/app/src/main/res/layout/activity_bmi_history.xml" value="0.307518115942029" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 3/Fitness_App-Bmi_Calc_Page/app/src/main/res/layout/activity_bmi_page.xml" value="0.307518115942029" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 3/Fitness_App-Bmi_Calc_Page/app/src/main/res/layout/activity_bmi_result.xml" value="0.307518115942029" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 3/Fitness_App-Bmi_Calc_Page/app/src/main/res/layout/activity_main.xml" value="0.307518115942029" />
+        <entry key="..\:/Users/ahmed/Downloads/Compressed/DS Lecture 3/Fitness_App-Bmi_Calc_Page/app/src/main/res/layout/historyv.xml" value="0.33" />
       </map>
     </option>
   </component>
