@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Intent intent = new Intent(this,BMI_Page.class);
         startActivity(intent);
-
+   //mm
     }
 
 }
