@@ -12,7 +12,7 @@ public interface foodApiInterface {
 
     @Headers({
             "Accept: application/json",
-            "X-RapidAPI-Key: RAPID_API_KEY",
+            "X-RapidAPI-Key: 9932740324msh6a9ddbc8c0def5bp11f8a7jsn2006718ededf",
             "X-RapidAPI-Host: calorieninjas.p.rapidapi.com",
 
 

@@ -23,6 +23,8 @@ public class FoodViewModel extends ViewModel {
             @Override
             public void onFailure(Call<Food> call, Throwable t) {
                 call.cancel();
+
+
             }
         });
 

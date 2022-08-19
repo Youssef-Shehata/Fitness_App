@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_AppMerged/app/src/main/res/drawable/card_back.xml" value="0.2555" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_AppMerged/app/src/main/res/layout/activity_bmi_history.xml" value="0.1" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_AppMerged/app/src/main/res/layout/activity_bmi_page.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_AppMerged/app/src/main/res/layout/activity_bmi_result.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_AppMerged/app/src/main/res/layout/historyv.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/drawable/card_back.xml" value="0.121" />
         <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/drawable/card_back_btn.xml" value="0.121" />
         <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/drawable/card_back_male_female.xml" value="0.2445" />

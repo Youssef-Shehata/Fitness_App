@@ -1,27 +1,12 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import androidx.core.content.ContextCompat;
-//MB AN error previous line
-
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
-
-import android.widget.SeekBar;
 import android.widget.Toast;
-
-//todo Edit The Colors
-
-import com.example.myapplication.databinding.ActivityMainBinding;
-
-import java.util.ArrayList;
-
 
 import com.example.myapplication.DBHelper;
 import com.example.myapplication.R;
@@ -40,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Intent intent = new Intent(this,BMI_Page.class);
+        startActivity(intent);
 
         eModel = ViewModelProviders.of(this ).get(eModel.getClass());
 
@@ -67,10 +53,9 @@ public class MainActivity extends AppCompatActivity {
             public void onChanged(Food food) {
                 //set Food view element here
                 //test toast
-                Toast.makeText(MainActivity.this, food.getItems()[0].getCalories(), Toast.LENGTH_SHORT).show();
+               Toast.makeText(MainActivity.this, food.getItems()[0].getCalories(), Toast.LENGTH_LONG).show();
             }
         });
 
 
-}}
-
+    }}

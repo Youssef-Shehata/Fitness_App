@@ -1,7 +1,11 @@
 package com.example.myapplication.Utils;
 
+import android.widget.Toast;
+
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+
+import com.example.myapplication.MainActivity;
 
 import java.util.List;
 
@@ -21,6 +25,7 @@ public  class ExViewModel extends ViewModel {
             @Override
             public void onFailure(Call<List<Exercise>> call, Throwable t) {
                 call.cancel();
+
             }
         });
     }

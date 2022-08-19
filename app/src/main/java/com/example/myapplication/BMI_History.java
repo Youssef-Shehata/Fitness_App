@@ -35,6 +35,7 @@ public class BMI_History extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         binding = ActivityBmiHistoryBinding.inflate(getLayoutInflater());
         setContentView(R.layout.activity_bmi_history);
         recyclerView= findViewById(R.id.recylerview);
