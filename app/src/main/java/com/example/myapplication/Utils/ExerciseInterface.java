@@ -24,7 +24,7 @@ public interface ExerciseInterface {
     @Headers({
 
             "Accept: application/json",
-            "X-RapidAPI-Key: 125bb40dcbmsh0d955b311e3bbb1p1a4458jsn8a6e92091310",
+            "X-RapidAPI-Key: Key",
             "X-RapidAPI-Host: exercisedb.p.rapidapi.com"
 
     })
