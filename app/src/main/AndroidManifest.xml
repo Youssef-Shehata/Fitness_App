@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -10,12 +14,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+
+            android:name=".Food_page"
+            android:exported="false" />
+        <activity
+            android:name=".BMI_Page"
+            android:exported="false" />
+        <activity
+            android:name=".BMI_Result"
+            android:exported="false" />
+        <activity
+            android:name=".BMI_History"
+            android:exported="false" />
+        <activity
+            android:name=".BMI_Page"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".BMI_Result"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
             android:name=".AllExercises"
             android:exported="false" />
         <activity
             android:name=".Exercises"
             android:exported="false" />
         <activity
+
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
