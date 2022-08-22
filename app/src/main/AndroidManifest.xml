@@ -14,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+
             android:name=".Food_page"
             android:exported="false" />
         <activity
@@ -34,6 +35,13 @@
             android:exported="false"
             tools:ignore="DuplicateActivity" />
         <activity
+            android:name=".AllExercises"
+            android:exported="false" />
+        <activity
+            android:name=".Exercises"
+            android:exported="false" />
+        <activity
+
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
