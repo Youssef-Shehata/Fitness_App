@@ -16,41 +16,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-
-        // int[] imageid = {R.drawable.a , R.drawable.a , R.drawable.a};
-        String[] bodypart = {"back" ,"leg" , "shoulder"};
-        String[] equipment = {"cable" , "machine", "dumble"};
-        int[] gifurl =  {R.drawable.a , R.drawable.a , R.drawable.a};
-        String[] ExerciseId = {"a" , "b" ,"c"};
-        String[] name = {"first","second","third"};
-        String[] target = {"kratos","joel","nate"};
-
-
-        ArrayList<User> userArrayList = new ArrayList<>();
-        for (int i = 0 ; i < gifurl.length ;i++){
-            User user = new User(bodypart[i],equipment[i],gifurl[i], ExerciseId[i],name[i],target[i]);
-            userArrayList.add(user);
-        }
-
-        ListAdapter listAdapter = new ListAdapter(MainActivity.this,userArrayList);
-        binding.ListView.setAdapter(listAdapter);
-        binding.ListView.setClickable(true);
-        binding.ListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(MainActivity.this,Exercises.class);
-                i.putExtra("bodypart",bodypart[position]);
-                i.putExtra("equipment",equipment[position]);
-                i.putExtra("ExerciseId",ExerciseId[position]);
-                i.putExtra("name",name[position]);
-                i.putExtra("target",target[position]);
-                startActivity(i);
-
-// intial Ui
-            }
-        });
+        Intent intent = new Intent(this,AllExercises.class);
+        startActivity(intent);
 
     }
 }
