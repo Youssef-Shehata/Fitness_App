@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("target",target[position]);
                 startActivity(i);
 
-// ashraf
+// intial Ui
             }
         });
 
