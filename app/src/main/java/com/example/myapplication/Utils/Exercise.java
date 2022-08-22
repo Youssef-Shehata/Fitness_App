@@ -55,6 +55,7 @@ public class Exercise {
     private  String id;
     private  String name;
     private  String target;
+    public   String gifurl;
 
 
 }

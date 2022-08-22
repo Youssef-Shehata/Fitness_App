@@ -2,8 +2,12 @@ package com.example.myapplication.Utils;
 
 import android.database.Observable;
 
+import com.example.myapplication.User;
 import com.example.myapplication.Utils.Exercise;
 
+import java.lang.reflect.Array;
+import java.net.UnknownServiceException;
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -20,13 +24,13 @@ public interface ExerciseInterface {
     @Headers({
 
             "Accept: application/json",
-            "X-RapidAPI-Key: 9932740324msh6a9ddbc8c0def5bp11f8a7jsn2006718ededf",
+            "X-RapidAPI-Key: 125bb40dcbmsh0d955b311e3bbb1p1a4458jsn8a6e92091310",
             "X-RapidAPI-Host: exercisedb.p.rapidapi.com"
 
     })
     @GET("exercises")
 
 
-    public Call<List<Exercise>> getExercise ();
+    public Call<ArrayList<User>> getExercise ();
 
 }

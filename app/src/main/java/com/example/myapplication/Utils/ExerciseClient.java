@@ -3,6 +3,9 @@ package com.example.myapplication.Utils;
 
 //todo Edit The Colors
 
+import com.example.myapplication.User;
+
+import java.util.ArrayList;
 import java.util.List;
 
         import retrofit2.Call;
@@ -40,7 +43,7 @@ public ExerciseClient(){
     }
 
 
-    public Call<List<Exercise>> getExercises(){
+    public Call<ArrayList<User>> getExercises(){
     return apiInterface.getExercise();
     }
 

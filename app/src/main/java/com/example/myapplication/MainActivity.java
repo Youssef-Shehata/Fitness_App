@@ -20,27 +20,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    ExViewModel eModel = new ExViewModel();
+
     FoodViewModel fModel = new FoodViewModel();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = new Intent(this,BMI_Page.class);
+        Intent intent = new Intent(this,AllExercises.class);
         startActivity(intent);
 
-        eModel = ViewModelProviders.of(this ).get(eModel.getClass());
-
-
-        eModel.getExercises();
-        eModel.exercises.observe(this, new Observer<List<Exercise>>() {
-            @Override
-            public void onChanged(List<Exercise> exercises) {
-                //set Exercises view element here
-                //test toast
-                Toast.makeText(MainActivity.this, exercises.get(200).getBodyPart(), Toast.LENGTH_SHORT).show();
-            }
-        });
 
 
 
