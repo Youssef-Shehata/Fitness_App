@@ -32,20 +32,20 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-        FoodViewModel fModel = new FoodViewModel();
-        fModel = ViewModelProviders.of(this ).get(fModel.getClass());
-        //food you wanna search for
-        String searchQuery = "banana";
-        fModel.getFood(searchQuery);
-        fModel.food.observe(this, new Observer<Food>() {
-            @Override
-            public void onChanged(Food food) {
-                //set Food view element here
-                //test toast
-               Toast.makeText(MainActivity.this, food.getItems()[0].getCalories(), Toast.LENGTH_LONG).show();
-            }
-        });
+//
+//        FoodViewModel fModel = new FoodViewModel();
+//        fModel = ViewModelProviders.of(this ).get(fModel.getClass());
+//        //food you wanna search for
+//        String searchQuery = "banana";
+//        fModel.getFood(searchQuery);
+//        fModel.food.observe(this, new Observer<Food>() {
+//            @Override
+//            public void onChanged(Food food) {
+//                //set Food view element here
+//                //test toast
+//               Toast.makeText(MainActivity.this, food.getItems()[0].getCalories(), Toast.LENGTH_LONG).show();
+//            }
+//        });
 
 
     }}
