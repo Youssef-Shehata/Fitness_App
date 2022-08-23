@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,6 +20,7 @@
 
 
         <TextView
+            android:id="@+id/gifurl"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -36,46 +42,67 @@
         android:paddingRight="8dp"
         android:paddingLeft="8dp"/>
 
-
-    <LinearLayout
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/a" />
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:orientation="horizontal">
+        app:cardCornerRadius="10dp"
 
+        app:cardBackgroundColor="@color/grey">
+
+
+    app:cardBackground="@drawable/card_back_plus_minus"
 
         <LinearLayout
-            android:layout_width="wrap_content"
+
+
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
-            android:orientation="vertical">
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/bodypart"
+
+            <LinearLayout
+
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="bodypart"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
+                android:layout_marginStart="160dp"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/bodypart_info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:textSize="15dp"
-                android:text="bodypart_info" />
+                <TextView
+                    android:id="@+id/bodypart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bodypart"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bodypart_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="bodypart_info"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginVertical="10dp"
         android:orientation="horizontal">
-
 
 
         <LinearLayout
@@ -89,22 +116,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="equipment"
-                android:textSize="18dp"
                 android:textColor="@color/black"
+                android:textSize="18dp"
+
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/equipment_info"
+                android:id="@+id/equipmentt_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="15dp"
-                android:text="equipment_info" />
+                android:text="equipment_info"
+                android:textSize="15dp" />
 
         </LinearLayout>
+
     </LinearLayout>
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -124,8 +151,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ExerciseId"
-                android:textSize="18dp"
                 android:textColor="@color/black"
+                android:textSize="18dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -133,7 +160,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="15dp"
                 android:text="Exercise_info" />
 
         </LinearLayout>
@@ -144,7 +170,6 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
         android:orientation="horizontal">
-
 
 
         <LinearLayout
@@ -158,8 +183,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="name"
-                android:textSize="18dp"
                 android:textColor="@color/black"
+                android:textSize="18dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -167,7 +192,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="name_info" />
+                android:text="name_info"
+                android:textSize="15dp" />
 
         </LinearLayout>
     </LinearLayout>
@@ -177,7 +203,6 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
         android:orientation="horizontal">
-
 
 
         <LinearLayout
@@ -191,9 +216,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="target"
-                android:textSize="18dp"
                 android:textColor="@color/black"
-
+                android:textSize="18dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -201,8 +225,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="15dp"
-                android:text="target_info" />
+                android:text="target_info"
+                android:textSize="15dp" />
 
         </LinearLayout>
     </LinearLayout>

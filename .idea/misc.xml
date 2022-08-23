@@ -3,12 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-
+        <entry key="..\:/Android studio/App1/app/src/main/res/layout/activity_all_exercises.xml" value="0.25" />
+        <entry key="..\:/Android studio/App1/app/src/main/res/layout/activity_bmi_history.xml" value="0.25" />
+        <entry key="..\:/Android studio/App1/app/src/main/res/layout/activity_bmi_page.xml" value="0.25" />
+        <entry key="..\:/Android studio/App1/app/src/main/res/layout/activity_bmi_result.xml" value="0.25" />
+        <entry key="..\:/Android studio/App1/app/src/main/res/layout/activity_exercises.xml" value="0.25" />
+        <entry key="..\:/Android studio/App1/app/src/main/res/layout/activity_exersice.xml" value="0.25" />
+        <entry key="..\:/Android studio/App1/app/src/main/res/layout/activity_food_page.xml" value="0.25" />
+        <entry key="..\:/Android studio/App1/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android studio/App1/app/src/main/res/layout/historyv.xml" value="0.25" />
+        <entry key="..\:/Android studio/App1/app/src/main/res/layout/list_item.xml" value="0.25" />
         <entry key="..\:/Android studio/Fitness_App/app/src/main/res/layout/activity_all_exercises.xml" value="0.25" />
         <entry key="..\:/Android studio/Fitness_App/app/src/main/res/layout/activity_exercises.xml" value="0.176" />
         <entry key="..\:/Android studio/Fitness_App/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android studio/Fitness_App/app/src/main/res/layout/list_item.xml" value="0.12132725430597771" />
-        <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />      
         <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_AppMerged/app/src/main/res/drawable/card_back.xml" value="0.2555" />
         <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_AppMerged/app/src/main/res/drawable/card_back_btn.xml" value="0.236" />
         <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_AppMerged/app/src/main/res/drawable/card_back_plus_minus.xml" value="0.236" />
@@ -54,7 +62,6 @@
         <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_food_page.xml" value="0.18" />
         <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/finalFitness_App/app/src/main/res/layout/historyv.xml" value="0.358695652173913" />
-
       </map>
     </option>
   </component>

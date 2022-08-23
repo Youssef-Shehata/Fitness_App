@@ -21,12 +21,14 @@ public class Exercises extends AppCompatActivity {
 
             String bodypart = intent.getStringExtra("bodypart");
             String equipment = intent.getStringExtra("equipment");
+            String gifurl = intent.getStringExtra("gifurl");
             String ExerciseId = intent.getStringExtra("ExerciseId");
             String name = intent.getStringExtra("name");
             String target = intent.getStringExtra("target");
 
             binding.bodypart.setText(bodypart);
             binding.equipment.setText(equipment);
+            binding.gifurl.setText(gifurl);
             binding.ExerciseId.setText(ExerciseId);
             binding.name.setText(name);
             binding.target.setText(target);
