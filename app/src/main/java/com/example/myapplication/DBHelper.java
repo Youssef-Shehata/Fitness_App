@@ -83,5 +83,26 @@ public class DBHelper extends SQLiteOpenHelper {
         }
         return cursor;
     }
+////////
+    void DeleteOneRow (String Row_ID) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        long result=  db.delete(TABLE_NAME,"_Id=?",new String[]{Row_ID}) ;
+        if (result==-1){
+            Toast.makeText(context, "Faild To Delete", Toast.LENGTH_SHORT).show();
 
+        }
+        else {
+            Toast.makeText(context, "Deleted successfully", Toast.LENGTH_SHORT).show();
+
+        }
+
+
+    }
+
+    void DeleteALlData () {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_NAME);
+
+    }
+////////
 }
