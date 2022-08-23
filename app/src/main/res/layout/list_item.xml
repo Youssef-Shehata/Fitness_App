@@ -2,16 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@color/grey"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
 
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         app:cardCornerRadius="10dp"
 
-        app:cardBackgroundColor="@color/grey">
+        app:cardBackgroundColor="@color/DarkerGrey">
 
 
     app:cardBackground="@drawable/card_back_plus_minus"
@@ -34,7 +38,7 @@
                 android:src="@drawable/a" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="60"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:orientation="vertical">
@@ -44,7 +48,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="name"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -52,7 +57,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="info" />
+                    android:text="info"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
 
             </LinearLayout>
 
