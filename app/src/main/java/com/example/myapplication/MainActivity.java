@@ -21,30 +21,31 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    FoodViewModel fModel = new FoodViewModel();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = new Intent(this,AllExercises.class);
+        Intent intent = new Intent(this,Food_page.class);
         startActivity(intent);
 
 
 
 
-
-        fModel = ViewModelProviders.of(this ).get(fModel.getClass());
-        //food you wanna search for
-        String searchQuery = "banana";
-        fModel.getFood(searchQuery);
-        fModel.food.observe(this, new Observer<Food>() {
-            @Override
-            public void onChanged(Food food) {
-                //set Food view element here
-                //test toast
-               Toast.makeText(MainActivity.this, food.getItems()[0].getCalories(), Toast.LENGTH_LONG).show();
-            }
-        });
+//
+//        FoodViewModel fModel = new FoodViewModel();
+//        fModel = ViewModelProviders.of(this ).get(fModel.getClass());
+//        //food you wanna search for
+//        String searchQuery = "banana";
+//        fModel.getFood(searchQuery);
+//        fModel.food.observe(this, new Observer<Food>() {
+//            @Override
+//            public void onChanged(Food food) {
+//                //set Food view element here
+//                //test toast
+//               Toast.makeText(MainActivity.this, food.getItems()[0].getCalories(), Toast.LENGTH_LONG).show();
+//            }
+//        });
 
 
     }}
