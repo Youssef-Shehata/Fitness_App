@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.target.Target;
 import com.example.myapplication.databinding.ActivityExercisesBinding;
 
@@ -28,9 +30,17 @@ public class Exercises extends AppCompatActivity {
             String name = intent.getStringExtra("name");
             String target = intent.getStringExtra("target");
 
+            ImageView Gifurl;
+            Gifurl = findViewById(R.id.gifurl);
+            Glide.with(Exercises.this)
+                    .load(gifurl)
+                                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                                            .into(Gifurl);
+
+
             binding.bodypart.setText(bodypart);
             binding.equipment.setText(equipment);
-            binding.gifurl.setText(gifurl);
+            //binding.gifurl.setImageResource(Gifurl);
             binding.ExerciseId.setText(ExerciseId);
             binding.name.setText(name);
             binding.target.setText(target);
