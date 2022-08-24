@@ -7,6 +7,201 @@
     android:background="@color/grey"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:id="@+id/center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/FoodId"
+        android:layout_width="175dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/height_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="15dp"
+
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="25dp"
+        android:layout_toStartOf="@id/center_vertical"
+        android:background="@drawable/card_back"
+        tools:ignore="NotSibling">
+
+        <ImageView
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:layout_above="@+id/textFood"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/food_page_icon" />
+
+        <TextView
+            android:id="@+id/textFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text="Food"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ExerciseId"
+        android:layout_width="175dp"
+        android:layout_height="150dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="-173dp"
+        android:layout_marginTop="214dp"
+        android:layout_marginEnd="213dp"
+
+        android:layout_marginBottom="25dp"
+        android:layout_toEndOf="@id/center_vertical"
+        android:background="@drawable/card_back">
+
+        <ImageView
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:layout_above="@+id/textExercises"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/exercises_icon" />
+
+        <TextView
+            android:id="@+id/textExercises"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text="Exercises"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/BmiId"
+        android:layout_width="175dp"
+        android:layout_height="150dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="27dp"
+
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="25dp"
+        android:layout_toEndOf="@id/center_vertical"
+        android:background="@drawable/card_back">
+
+        <ImageView
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:layout_above="@+id/textFemale"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/bmi_icon" />
+
+        <TextView
+            android:id="@+id/textFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text="BMI"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+/////////////////////
+
+    <RelativeLayout
+        android:id="@+id/InfoId"
+        android:layout_width="175dp"
+        android:layout_height="150dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="214dp"
+        android:layout_marginEnd="27dp"
+
+        android:layout_marginBottom="25dp"
+        android:layout_toEndOf="@id/center_vertical"
+        android:background="@drawable/card_back">
+
+        <ImageView
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:layout_above="@+id/textInfo"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_baseline_info_24" />
+
+        <TextView
+            android:id="@+id/textInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text="Info"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_marginBottom="5dp"
+
+
+        app:srcCompat="@drawable/quote" />
+
+    <!--    <TextView-->
+<!--        android:id="@+id/textView4"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="130dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="451dp"-->
+<!--        android:text="You miss 100% of the shots you don't take"-->
+
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#000000"-->
+
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold" />-->
 
 
 </RelativeLayout>
+
+

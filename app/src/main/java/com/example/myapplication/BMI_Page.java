@@ -120,19 +120,19 @@ public class BMI_Page extends AppCompatActivity {
 
     private void calculateBmi() {
         if(typeOfUser.equals("0")){
-            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please Enter Reasonable Data", Toast.LENGTH_SHORT).show();
             everyThingIsRigyt = false;
         }
         if (intialHeight <= 0 || currentHeaight.equals("0")){
-            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please Enter Reasonable Data", Toast.LENGTH_SHORT).show();
             everyThingIsRigyt = false;
         }
         if  (intialWeight<=0|| currentWeight.equals("0")){
-            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please Enter Reasonable Data", Toast.LENGTH_SHORT).show();
             everyThingIsRigyt = false;
         }
         if (currentAge.equals("0")||intialِAge<=0){
-            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please Enter Reasonable Data", Toast.LENGTH_SHORT).show();
             everyThingIsRigyt = false;
         }
         if (everyThingIsRigyt){

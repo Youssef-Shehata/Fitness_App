@@ -3,7 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-
         <entry key="..\:/Android studio/App1/app/src/main/res/layout/activity_all_exercises.xml" value="0.25" />
         <entry key="..\:/Android studio/App1/app/src/main/res/layout/activity_bmi_history.xml" value="0.25" />
         <entry key="..\:/Android studio/App1/app/src/main/res/layout/activity_bmi_page.xml" value="0.25" />
@@ -28,6 +27,23 @@
         <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_AppMerged/app/src/main/res/layout/activity_exersice.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_AppMerged/app/src/main/res/layout/activity_main.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_AppMerged/app/src/main/res/layout/historyv.xml" value="0.4" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable-v24/exercises_icon.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable-v24/ic_baseline_calculate_24.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable-v24/ic_baseline_fastfood_24.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable-v24/ic_baseline_fitness_center_24.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable/card_back.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable/card_back_male_female.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable/card_back_not_focus.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable/card_back_plus_minus.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable/circle.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable/ic_baseline_check_circle_outline_24.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable/ic_baseline_highlight_off_24.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/Users/Moham/AndroidStudioProjects/Fitness_App_Before Main Page/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/drawable/card_back.xml" value="0.121" />
         <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/drawable/card_back_btn.xml" value="0.121" />
         <entry key="..\:/Users/Moham/Desktop/MyApplication/app/src/main/res/drawable/card_back_male_female.xml" value="0.2445" />
