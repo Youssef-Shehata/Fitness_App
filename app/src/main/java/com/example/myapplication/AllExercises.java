@@ -23,6 +23,7 @@ public class AllExercises extends AppCompatActivity {
 ActivityAllExercisesBinding  binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
 
         super.onCreate(savedInstanceState);
         binding = ActivityAllExercisesBinding.inflate(getLayoutInflater());
