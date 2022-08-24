@@ -84,7 +84,7 @@ public class BMI_Result extends AppCompatActivity {
         binding.bmiDisplay.setText(currentBMI.substring(0,5));
 
         binding.reCalculateBmi.setOnClickListener(view -> {
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, BMI_Page.class));
         });
 
 

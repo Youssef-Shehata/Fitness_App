@@ -5,23 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.provider.ContactsContract;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.myapplication.databinding.ActivityBmiHistoryBinding;
-import com.example.myapplication.databinding.ActivityBmiPageBinding;
-
-import java.util.Calendar;
-
 import java.util.ArrayList;
-import java.util.Date;
 
 public class BMI_History extends AppCompatActivity {
     RecyclerView recyclerView;
@@ -32,6 +24,31 @@ public class BMI_History extends AppCompatActivity {
 
     BMI_AD bmi_ad;
 
+    @Override
+    public boolean onCreateOptionsMenu(@NonNull Menu menu) {
+        MenuInflater inflater =getMenuInflater();
+        inflater.inflate(R.menu.delete_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        myDB.DeleteALlData();
+        setContentView(R.layout.activity_bmi_history);
+        recyclerView= findViewById(R.id.recylerview);
+        myDB = new DBHelper(BMI_History.this);
+        height = new ArrayList<>();
+        weight = new ArrayList<>();
+        date = new ArrayList<>();
+        Bmi = new ArrayList<>();
+        displayData();
+        setOnClickListner();
+        bmi_ad = new BMI_AD(BMI_History.this,height,weight,date,Bmi,listner);
+        recyclerView.setAdapter(bmi_ad);
+        recyclerView.setLayoutManager(new LinearLayoutManager(BMI_History.this));
+
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,9 +71,24 @@ public class BMI_History extends AppCompatActivity {
 
     private void setOnClickListner() {
         listner = new BMI_AD.RecylceviewClicklistner() {
+
+
             @Override
             public void onclick(View V, int postion) {
-                System.out.println(postion);
+////                myDB.DeleteALlData();
+//                myDB.DeleteOneRow(String.valueOf(postion+1));
+//                setContentView(R.layout.activity_bmi_history);
+//                recyclerView= findViewById(R.id.recylerview);
+//                myDB = new DBHelper(BMI_History.this);
+//                height = new ArrayList<>();
+//                weight = new ArrayList<>();
+//                date = new ArrayList<>();
+//                Bmi = new ArrayList<>();
+//                displayData();
+//                setOnClickListner();
+//                bmi_ad = new BMI_AD(BMI_History.this,height,weight,date,Bmi,listner);
+//                recyclerView.setAdapter(bmi_ad);
+//                recyclerView.setLayoutManager(new LinearLayoutManager(BMI_History.this));
 
             }
         };
