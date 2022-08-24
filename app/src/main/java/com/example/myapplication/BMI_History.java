@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -26,8 +27,8 @@ public class BMI_History extends AppCompatActivity {
     RecyclerView recyclerView;
     DBHelper myDB;
     ArrayList<String> height, weight, date, Bmi;
+    private BMI_AD.RecylceviewClicklistner listner;
     @NonNull
-    ActivityBmiHistoryBinding binding;
 
     BMI_AD bmi_ad;
 
@@ -35,8 +36,7 @@ public class BMI_History extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
-        binding = ActivityBmiHistoryBinding.inflate(getLayoutInflater());
+
         setContentView(R.layout.activity_bmi_history);
         recyclerView= findViewById(R.id.recylerview);
         myDB = new DBHelper(BMI_History.this);
@@ -45,16 +45,21 @@ public class BMI_History extends AppCompatActivity {
         date = new ArrayList<>();
         Bmi = new ArrayList<>();
         displayData();
-        bmi_ad = new BMI_AD(BMI_History.this,height,weight,date,Bmi);
+        setOnClickListner();
+        bmi_ad = new BMI_AD(BMI_History.this,height,weight,date,Bmi,listner);
         recyclerView.setAdapter(bmi_ad);
         recyclerView.setLayoutManager(new LinearLayoutManager(BMI_History.this));
-        binding.recylerview.setOnClickListener(view -> {
 
-        });
+    }
 
+    private void setOnClickListner() {
+        listner = new BMI_AD.RecylceviewClicklistner() {
+            @Override
+            public void onclick(View V, int postion) {
+                System.out.println(postion);
 
-
-
+            }
+        };
     }
 
     void displayData() {
@@ -63,7 +68,7 @@ public class BMI_History extends AppCompatActivity {
             Toast.makeText(this, "No Data. ", Toast.LENGTH_SHORT).show();
         } else {
             while (cursor.moveToNext()) { //read all data from our cursor
-                Bmi.add(cursor.getString(5).substring(0,5)); //0 means the 1st column
+                Bmi.add(cursor.getString(5)); //0 means the 1st column
                 height.add(cursor.getString(2)); //1 means the 2nd column
                 weight.add(cursor.getString(3)); //2 means the 3rd column
                 date.add(cursor.getString(4)); //3 means the 4th column
