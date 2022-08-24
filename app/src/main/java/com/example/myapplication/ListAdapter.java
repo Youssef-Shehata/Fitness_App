@@ -55,7 +55,7 @@ public class ListAdapter extends ArrayAdapter<User> {
         Glide.with(super.getContext())
                 .load(user.getGifUrl())
                 .override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
-                .placeholder(R.drawable.male)
+//                .placeholder(R.drawable.male)
                 .into(imageView);
 
         return convertView;
