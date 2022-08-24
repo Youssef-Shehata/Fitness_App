@@ -15,7 +15,7 @@
         android:theme="@style/Theme.MyApplication"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Loading_page"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Food_page"
@@ -44,7 +44,7 @@
             android:name=".Exercises"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Loading_page"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
