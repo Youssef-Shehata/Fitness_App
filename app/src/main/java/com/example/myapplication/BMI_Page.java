@@ -42,13 +42,13 @@ public class BMI_Page extends AppCompatActivity {
             calculateBmi();
         });
         binding.male.setOnClickListener(view -> {
-            binding.male.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.card_back_plus_minus));
+            binding.male.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.selected_gender));
             binding.female.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.card_back));
             typeOfUser = "Male";
 
         });
         binding.female.setOnClickListener(view -> {
-            binding.female.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.card_back_plus_minus));
+            binding.female.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.selected_gender));
             binding.male.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.card_back));
             typeOfUser = "Female";
 
