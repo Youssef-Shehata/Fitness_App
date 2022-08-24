@@ -7,15 +7,17 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication">
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
         <activity
-
+            android:name=".Loading_page"
+            android:exported="false" />
+        <activity
             android:name=".Food_page"
             android:exported="false" />
         <activity
@@ -42,7 +44,6 @@
             android:name=".Exercises"
             android:exported="false" />
         <activity
-
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
