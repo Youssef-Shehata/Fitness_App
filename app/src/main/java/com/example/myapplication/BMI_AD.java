@@ -16,22 +16,25 @@ import java.util.ArrayList;
 public class BMI_AD extends RecyclerView.Adapter<BMI_AD.MyViewHolder> {
     private Context context;
     private ArrayList height, weight,bmi,date;
+    private  RecylceviewClicklistner listner;
 
-    public BMI_AD(Context context, ArrayList height, ArrayList weight,  ArrayList date,ArrayList bmi) {
+    public BMI_AD(Context context, ArrayList height, ArrayList weight,  ArrayList date,ArrayList bmi,RecylceviewClicklistner listner) {
         this.context = context;
         this.height = height;
         this.weight = weight;
         this.bmi = bmi;
         this.date = date;
+        this.listner = listner;
     }
 
     @NonNull
     @Override
     public BMI_AD.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-       View view = inflater.inflate(R.layout.historyv,parent,false);
+        View view = inflater.inflate(R.layout.historyv,parent,false);
         return new MyViewHolder(view);
     }
+
 
     @Override
     public void onBindViewHolder(@NonNull BMI_AD.MyViewHolder holder, int position) {
@@ -47,7 +50,7 @@ public class BMI_AD extends RecyclerView.Adapter<BMI_AD.MyViewHolder> {
         return height.size();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView height_txt,weight_txt,bmi_txt,date_txt;
         public MyViewHolder(@NonNull View itemView) {
 
@@ -56,7 +59,16 @@ public class BMI_AD extends RecyclerView.Adapter<BMI_AD.MyViewHolder> {
             weight_txt = itemView.findViewById(R.id.Weight);
             bmi_txt = itemView.findViewById(R.id.BMIs);
             date_txt = itemView.findViewById(R.id.date);
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View view) {listner.onclick(view,getAdapterPosition());
+        }
+    }
+    public interface RecylceviewClicklistner{
+        void onclick(View V,int postion);
+
     }
 }
 
