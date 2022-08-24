@@ -16,6 +16,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class BMI_History extends AppCompatActivity {
+
     RecyclerView recyclerView;
     DBHelper myDB;
     ArrayList<String> height, weight, date, Bmi;
@@ -53,8 +54,9 @@ public class BMI_History extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_bmi_history);
+        getSupportActionBar().setTitle("BmI Records");  // provide compatibility to all the versions
+
         recyclerView= findViewById(R.id.recylerview);
         myDB = new DBHelper(BMI_History.this);
         height = new ArrayList<>();
