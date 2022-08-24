@@ -29,7 +29,7 @@
             android:textSize="20dp"
             android:gravity="center"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             />
 
 
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="10dp"
         android:layout_marginTop="10dp"
-        app:cardBackgroundColor="@color/DarkerGrey">
+        app:cardBackgroundColor="@color/white">
         app:cardBackground="@drawable/card_back_plus_minus"
 
 
@@ -85,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="bodypart"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15dp" />
 
 
@@ -94,7 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="bodypart"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -108,7 +108,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:cardBackgroundColor="@color/DarkerGrey"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="10dp">
         app:cardBackground="@drawable/card_back_plus_minus"
 
@@ -132,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="equipment"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15dp" />
 
 
@@ -141,7 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="equipment"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="18dp"
 
                 android:textStyle="bold" />
@@ -157,7 +157,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:cardBackgroundColor="@color/DarkerGrey"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="10dp">
         app:cardBackground="@drawable/card_back_plus_minus"
 
@@ -180,7 +180,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="name"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15dp" />
 
 
@@ -189,7 +189,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="name"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -202,7 +202,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:cardBackgroundColor="@color/DarkerGrey"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="10dp">
         app:cardBackground="@drawable/card_back_plus_minus"
 
@@ -226,7 +226,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="target"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15dp" />
 
 
@@ -235,7 +235,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="target"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 

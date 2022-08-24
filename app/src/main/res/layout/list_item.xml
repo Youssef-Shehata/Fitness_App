@@ -14,11 +14,11 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
         android:layout_marginStart="15dp"
-
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="15dp"
         app:cardCornerRadius="20dp"
 
-        app:cardBackgroundColor="#595858">
+        app:cardBackgroundColor="@color/white">
 
 
     app:cardBackground="@drawable/card_back_plus_minus"
