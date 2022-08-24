@@ -57,6 +57,7 @@ ActivityAllExercisesBinding  binding;
                             Intent i = new Intent(AllExercises.this, Exercises.class);
                             i.putExtra("bodypart", userArrayList.get(position).getBodyPart());
                             i.putExtra("equipment", userArrayList.get(position).getEquipment());
+                            i.putExtra("gifurl", userArrayList.get(position).getGifUrl());
                             i.putExtra("ExerciseId", userArrayList.get(position).getId());
                             i.putExtra("name", userArrayList.get(position).getName());
                             i.putExtra("target", userArrayList.get(position).getTarget());

@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.webkit.WebViewClient;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -30,18 +32,17 @@ public class Exercises extends AppCompatActivity {
             String name = intent.getStringExtra("name");
             String target = intent.getStringExtra("target");
 
-            ImageView Gifurl;
-            Gifurl = findViewById(R.id.gifurl);
-            Glide.with(Exercises.this)
-                    .load(gifurl)
-                                    .diskCacheStrategy(DiskCacheStrategy.ALL)
-                                            .into(Gifurl);
+           // Glide.with(getApplicationContext()).asGif().load(gifurl).into(binding.gifurl);
+            binding.gifurl.getSettings().setJavaScriptEnabled(true);
+            binding.gifurl.setWebViewClient(new WebViewClient());
+            binding.gifurl.loadUrl(gifurl);
+            Log.i("test" , gifurl);
+
 
 
             binding.bodypart.setText(bodypart);
             binding.equipment.setText(equipment);
             //binding.gifurl.setImageResource(Gifurl);
-            binding.ExerciseId.setText(ExerciseId);
             binding.name.setText(name);
             binding.target.setText(target);
         }

@@ -2,6 +2,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="@color/grey"
     android:layout_width="match_parent"
@@ -32,6 +33,8 @@
             />
 
 
+
+
     </LinearLayout>
 
     <View
@@ -42,17 +45,19 @@
         android:paddingRight="8dp"
         android:paddingLeft="8dp"/>
 
-    <ImageView
+    <WebView
         android:id="@+id/gifurl"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/a" />
+
+        />
 
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
         app:cardBackgroundColor="@color/DarkerGrey">
         app:cardBackground="@drawable/card_back_plus_minus"
 
@@ -67,11 +72,22 @@
         <LinearLayout
 
 
-            android:layout_width="123dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
+            android:layout_marginStart="30dp"
             android:orientation="vertical">
             android:
+
+
+            <TextView
+                android:id="@+id/bodypart_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="bodypart"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
 
             <TextView
                 android:id="@+id/bodypart"
@@ -81,15 +97,6 @@
                 android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/bodypart_info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="bodypart_info"
-                android:textColor="@color/white"
-                android:textSize="15dp" />
 
         </LinearLayout>
 
@@ -114,8 +121,20 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
+            android:layout_marginStart="30dp"
             android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/equipmentt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="equipment"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
 
             <TextView
                 android:id="@+id/equipment"
@@ -127,82 +146,43 @@
 
                 android:textStyle="bold" />
 
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/DarkerGrey"
+        app:cardCornerRadius="10dp">
+        app:cardBackground="@drawable/card_back_plus_minus"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:orientation="vertical">
+
+
             <TextView
-                android:id="@+id/equipmentt_info"
+                android:id="@+id/name_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="equipment_info"
+                android:text="name"
                 android:textColor="@color/white"
                 android:textSize="15dp" />
 
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:cardBackgroundColor="@color/DarkerGrey"
-        app:cardCornerRadius="10dp">
-        app:cardBackground="@drawable/card_back_plus_minus"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:orientation="horizontal">
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/ExerciseId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ExerciseId"
-                android:textColor="@color/white"
-                android:textSize="18dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/ExerciseId_info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:textColor="@color/white"
-                android:text="Exercise_info" />
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:cardBackgroundColor="@color/DarkerGrey"
-        app:cardCornerRadius="10dp">
-        app:cardBackground="@drawable/card_back_plus_minus"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:orientation="horizontal">
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
-            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/name"
@@ -213,15 +193,6 @@
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/name_info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="name_info"
-                android:textColor="@color/white"
-                android:textSize="15dp" />
-
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -244,8 +215,20 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
+            android:layout_marginStart="30dp"
             android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/target_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="target"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
 
             <TextView
                 android:id="@+id/target"
@@ -255,15 +238,6 @@
                 android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/target_info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="target_info"
-                android:textColor="@color/white"
-                android:textSize="15dp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
