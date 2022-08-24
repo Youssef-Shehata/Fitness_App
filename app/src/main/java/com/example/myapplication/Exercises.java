@@ -18,6 +18,8 @@ public class Exercises extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
+
         binding = ActivityExercisesBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
