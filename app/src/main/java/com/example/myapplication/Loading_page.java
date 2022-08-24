@@ -11,6 +11,9 @@ Handler handler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
+
+
         setContentView(R.layout.activity_loading_page);
         handler=new Handler();
         handler.postDelayed(new Runnable() {
