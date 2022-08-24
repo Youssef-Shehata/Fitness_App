@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        //getSupportActionBar().hide();
+        getSupportActionBar().hide();
 
         binding.ExerciseId.setOnClickListener(view -> {
 
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.InfoId.setOnClickListener(view -> {
 
-        Toast.makeText(MainActivity.this , "بس يلا", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this , "App That Help You To Gain Muscles", Toast.LENGTH_LONG).show();
 
         });
 
