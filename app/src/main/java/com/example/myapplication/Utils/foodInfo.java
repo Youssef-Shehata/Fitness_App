@@ -6,6 +6,24 @@ public class foodInfo {
     String calories;
     String protein_g;
     String carbohydrates_total_g;
+    String serving_size_g;
+    String fat_total_g;
+
+    public String getServing_size_g() {
+        return serving_size_g;
+    }
+
+    public void setServing_size_g(String serving_size_g) {
+        this.serving_size_g = serving_size_g;
+    }
+
+    public String getFat_total_g() {
+        return fat_total_g;
+    }
+
+    public void setFat_total_g(String fat_total_g) {
+        this.fat_total_g = fat_total_g;
+    }
 
     public String getName() {
         return name;

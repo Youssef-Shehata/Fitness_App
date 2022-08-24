@@ -13,11 +13,16 @@ import retrofit2.Response;
 
 public class FoodViewModel extends ViewModel {
     public MutableLiveData<Food> food = new MutableLiveData<>();
+    //public MutableLiveData<Food> food=null;
     public void getFood(String searchQuery){
         FoodClient.getInstance().getFood(searchQuery).enqueue(new Callback<Food>() {
             @Override
             public void onResponse(Call<Food> call, Response<Food> response) {
-                food.setValue(response.body());
+                if (response.isSuccessful())
+                {
+                    food.setValue(response.body());
+                }
+
             }
 
             @Override
