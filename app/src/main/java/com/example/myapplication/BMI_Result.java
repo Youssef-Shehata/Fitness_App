@@ -45,7 +45,8 @@ public class BMI_Result extends AppCompatActivity {
         intialBMI = intialWeight /pow(intialHeight /100 , 2);
         currentBMI =  Double.toString(intialBMI);
 
-        db.insert(gender, height, weight, age, currentBMI);
+        db.insert(gender, height, weight, age,  currentBMI.substring(0,4));
+
 
 
         getSupportActionBar().hide();
