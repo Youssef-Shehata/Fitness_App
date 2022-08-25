@@ -77,7 +77,7 @@ public class Food_page extends AppCompatActivity {
                                 binding.foodNameTxInfo.setText(food.getItems()[0].getName());
                                 binding.protienTxInfo.setText(food.getItems()[0].getProtein_g());
                                 binding.calioresTxInfo.setText(food.getItems()[0].getCalories());
-                                binding.calioresTxInfo.setText(food.getItems()[0].getCarbohydrates_total_g());
+                                binding.carbTxInfo.setText(food.getItems()[0].getCarbohydrates_total_g());
                                 binding.fatTxInfo.setText(food.getItems()[0].getFat_total_g().toString());
                                 binding.servSizeTxInfo.setText(food.getItems()[0].getServing_size_g().toString());
                                 binding.foodLayout.setVisibility(View.VISIBLE);
