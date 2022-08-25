@@ -57,7 +57,9 @@ public class MainActivity extends AppCompatActivity {
 
         binding.InfoId.setOnClickListener(view -> {
 
-        Toast.makeText(MainActivity.this , "App That Help You To Gain Muscles", Toast.LENGTH_LONG).show();
+//        Toast.makeText(MainActivity.this , "App That Help You To Gain Muscles", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this,Info_page.class);
+            startActivity(intent);
 
         });
 

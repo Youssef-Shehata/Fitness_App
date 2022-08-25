@@ -60,7 +60,7 @@ public class BMI_Result extends AppCompatActivity {
         else   if (intialBMI <39.9&& intialBMI >30){
             binding.bmiCategory.setText("Moderate Thiness");
             mBackground.setBackgroundColor(Color.parseColor("#C1B35B"));
-            binding.imageView.setImageResource(R.drawable.ic_baseline_info_24);
+
         }
         else   if (intialBMI <24.9 && intialBMI >18.5){
             binding.bmiCategory.setText("Healthy");
@@ -70,7 +70,7 @@ public class BMI_Result extends AppCompatActivity {
         else   if (intialBMI <29.9&& intialBMI >25){
             binding.bmiCategory.setText("Over Weight");
             mBackground.setBackgroundColor(Color.parseColor("#C1B35B"));
-            binding.imageView.setImageResource(R.drawable.ic_baseline_info_24);
+
         }
 
         else  {
