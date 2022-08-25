@@ -26,7 +26,7 @@
             app:cardBackgroundColor="@color/white">
 
 
-            app:cardBackground="@drawable/card_back_plus_minus"
+            app:cardBackground="@drawable/food_layout_color"
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
