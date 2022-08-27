@@ -28,7 +28,6 @@ public class BMI_Result extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         DBHelper db = new DBHelper(this);
         binding = ActivityBmiResultBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

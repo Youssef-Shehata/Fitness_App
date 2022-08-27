@@ -6,17 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".Loading_page"
     android:background="@color/grey">
-<ImageView
-    android:id="@+id/image_load"
-    android:layout_width="300dp"
-    android:layout_height="300dp"
 
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    android:src="@drawable/logo2"
-    app:layout_constraintTop_toTopOf="parent"
-/>
+    <ImageView
+        android:id="@+id/image_load"
+        android:layout_width="257dp"
+        android:layout_height="248dp"
+
+        android:src="@drawable/logo2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

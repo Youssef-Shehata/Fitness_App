@@ -54,12 +54,12 @@
         <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_all_exercises.xml" value="0.38697916666666665" />
         <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_bmi_history.xml" value="0.358695652173913" />
         <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_bmi_page.xml" value="0.358695652173913" />
-        <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_bmi_result.xml" value="0.358695652173913" />
+        <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_bmi_result.xml" value="0.67" />
         <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_exercises.xml" value="0.38697916666666665" />
         <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_exersice.xml" value="0.358695652173913" />
-        <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_food_page.xml" value="0.22" />
+        <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_food_page.xml" value="0.67" />
         <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_info_page.xml" value="0.18" />
-        <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_loading_page.xml" value="0.15384615384615385" />
+        <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_loading_page.xml" value="0.5" />
         <entry key="..\:/finalFitness_App/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/finalFitness_App/app/src/main/res/layout/historyv.xml" value="0.34146341463414637" />
       </map>
