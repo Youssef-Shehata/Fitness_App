@@ -1,23 +1,13 @@
 package com.example.myapplication.Utils;
 
 
-//todo Edit The Colors
-
-import com.example.myapplication.User;
+import com.example.myapplication.exercise;
 
 import java.util.ArrayList;
-import java.util.List;
 
-        import retrofit2.Call;
+import retrofit2.Call;
         import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
-
-
-
-
-
-
 
 public class ExerciseClient {
     private static final String URL = "https://exercisedb.p.rapidapi.com/";
@@ -33,8 +23,6 @@ public ExerciseClient(){
     apiInterface= retrofit.create(ExerciseInterface.class);
 
 }
-
-
     public static ExerciseClient getInstance() {
     if(instance == null){
         instance = new ExerciseClient();
@@ -42,8 +30,7 @@ public ExerciseClient(){
         return instance;
     }
 
-
-    public Call<ArrayList<User>> getExercises(){
+    public Call<ArrayList<exercise>> getExercises(){
     return apiInterface.getExercise();
     }
 

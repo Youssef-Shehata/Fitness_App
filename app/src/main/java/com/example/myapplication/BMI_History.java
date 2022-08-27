@@ -77,20 +77,6 @@ public class BMI_History extends AppCompatActivity {
 
             @Override
             public void onclick(View V, int postion) {
-////                myDB.DeleteALlData();
-//                myDB.DeleteOneRow(String.valueOf(postion+1));
-//                setContentView(R.layout.activity_bmi_history);
-//                recyclerView= findViewById(R.id.recylerview);
-//                myDB = new DBHelper(BMI_History.this);
-//                height = new ArrayList<>();
-//                weight = new ArrayList<>();
-//                date = new ArrayList<>();
-//                Bmi = new ArrayList<>();
-//                displayData();
-//                setOnClickListner();
-//                bmi_ad = new BMI_AD(BMI_History.this,height,weight,date,Bmi,listner);
-//                recyclerView.setAdapter(bmi_ad);
-//                recyclerView.setLayoutManager(new LinearLayoutManager(BMI_History.this));
 
             }
         };

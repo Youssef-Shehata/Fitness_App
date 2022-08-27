@@ -13,7 +13,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.target.Target;
 import com.example.myapplication.databinding.ActivityExercisesBinding;
 
-public class Exercises extends AppCompatActivity {
+public class Exercise_info extends AppCompatActivity {
     ActivityExercisesBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

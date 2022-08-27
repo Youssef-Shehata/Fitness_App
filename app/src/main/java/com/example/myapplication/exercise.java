@@ -1,6 +1,6 @@
 package com.example.myapplication;
 
-public class User {
+public class exercise {
     private  String bodyPart;
     private  String equipment;
     private  String gifUrl;
@@ -9,7 +9,7 @@ public class User {
     private  String target;
     public   String gifurl;
 
-    public User(String bodypart, String equipment, String gifurl, String ExrciseId, String name, String target) {
+    public exercise(String bodypart, String equipment, String gifurl, String ExrciseId, String name, String target) {
         this.bodyPart = bodypart;
         this.equipment = equipment;
         this.gifUrl = gifurl;

@@ -15,8 +15,6 @@ public interface foodApiInterface {
             "X-RapidAPI-Key: 12fac1be5bmshc1f310c52d928f8p1934a4jsnfe3d7374cfa1",
             "X-RapidAPI-Host: calorieninjas.p.rapidapi.com",
 
-
-
     })
     @GET("nutrition")
 

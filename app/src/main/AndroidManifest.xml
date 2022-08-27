@@ -44,7 +44,7 @@
             android:name=".AllExercises"
             android:exported="false" />
         <activity
-            android:name=".Exercises"
+            android:name=".Exercise_info"
             android:exported="false" />
         <activity
             android:name=".Loading_page"
